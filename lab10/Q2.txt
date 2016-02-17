@@ -1,0 +1,21 @@
+2)
+- timed values (asynchronous read)
+	- 10 reads: 0.013s, 0.013s, 0.013s MIN: 0.013s
+	- 100 reads: 0.014s, 0.013s, 0.014s MIN: 0.013s
+	- 1000 reads: 0.016s, 0.016s, 0.016s MIN: 0.016s
+	- 10000 reads: 0.190s, 0.235s, 0.668s MIN: 0.190s
+- timed values (synchronous read - comparison)
+	- 10 reads: 0.112s
+	- 100 reads: 1.094s
+	- 1000 reads: 10.871s
+	- 10000 reads: 46.926s
+- asynchronous read is alot faster than synchronous read, at lower reads (10 reads), 
+the difference is not that apparent, but at higher reads 1000+ reads, the difference
+is much clearer
+- asynchronous read is faster because of how the disk read requests and handle reads are done, 
+asynchronous read does a bunch of disk reads(request) and puts them into a queue (and register/assigns them for event-handling)
+and moves on to the next disk read request without waiting for the previous one to finish (doesn't
+call handleRead in for-loop)
+- synchronous reads does disk read requests and waits for the read to return before
+doing the next read (handles after it returns), all in for-loop, therefore much slower
+- event handling in asynchronous allows the code to proceed without waiting for EACH disk read to complete before proceeding

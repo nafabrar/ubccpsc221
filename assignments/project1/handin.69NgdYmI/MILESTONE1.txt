@@ -1,0 +1,57 @@
+Student Name #1: TODO: 
+Student ugrad login #1: TODO: 
+
+Student Name #2: TODO: 
+Student ugrad login #2: TODO: 
+
+TODO: Acknowledgment that you understand and have followed the course's collaboration policy
+(http://www.ugrad.cs.ubc.ca/~cs221/current/syllabus.shtml#conduct):
+
+TODO: [[Put your names here again as signature]]
+
+TODO: submit using: make handin-milestone1
+(Run that from one of the UBC ugrad computers, after you have transfered
+your files there and tested to make sure they work correctly on our systems.)
+
+----------------------------------------------------------------------
+
+Questions:
+
+For the explanations, generally a sentence or two should be enough.
+Type your answers directly in this file.
+
+
+1.  Edit solve.cpp to solve the empty Sudoku board.  (You should
+only comment out one line and uncomment one line to do that.)
+Then change the delay in the usleep delay in the solvePuzzle function
+to 100000.  What solution do you get?
+
+TODO:
+
+2.  Edit solve.cpp to solve the MazeRunner problem, and set the code
+to declare activeStates as ArrayStack or LinkedListStack.
+Do you see why it's called depth-first search (DFS)?
+How many steps long was the solution it found?
+
+TODO:
+
+3.  Next, edit solve.cpp again to switch to make activeStates
+a VectorPriorityQueue.  This gives you best-first search (BestFS).
+How many steps long was the solution it found?
+
+TODO:
+
+4.  Edit solve.cpp to switch to the 3x3 slider puzzle.  Also,
+comment out the delay and print statements in the solvePuzzle function.
+How long does it take to solve this problem with BestFS (using
+VectorPriorityQueue as in the preceding question)?
+
+TODO:
+
+5.  Edit solve.cpp to switch back to ArrayStack or LinkedListStack,
+which switches back to DFS.  Try solving the 3x3 slider puzzle.
+What happens?  Why?
+
+TODO:
+
+----------------------------------------------------------------------

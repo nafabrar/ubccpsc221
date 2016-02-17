@@ -1,0 +1,15 @@
+1)
+- simply running sRead with ./sRead (# of reads) without modications
+simply outputs e # of reads you inputted, with increasing delay as you
+increase the number of reads
+- upon changing the assertion statement to blockno-1, running the program fails
+- upon adding the printf statement, the buf value corresponding block number is printed 
+- times:
+	10 reads: 0.112s
+	100 reads: 1.094s
+	1000 reads: 10.871s
+	10000 reads: 46.926s
+- increasing the number input simply requires CPU to do more reads, since this takes time
+(request/write), time goes up
+- increasing the number also increases the for-loop iteration amount, thus runtime increases
+with input

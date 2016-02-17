@@ -1,0 +1,11 @@
+
+
+#. cutoff was height < 10 because height for 1100 nodes in a binary tree was 9.something. so <10 or <=9 since height is an integer.
+
+. the most common word in the files is "the".
+
+#5. sequential for king_james_bible.txt is faster when the cutoff is at height < 3.
+    parallel is faster after height < 4.
+    
+    sequential is faster at height < 4 a_few_google_5_grams.txt
+    with height < 5, parallel is faster than sequential.

@@ -1,0 +1,13 @@
+4)
+- first tested through running pc_spinlock several times to make sure
+the total number of item counts = 800 all the time, since the original set iterations number
+is 200 and there is 4 processors and 2 of each producers and consumers threads
+- then added assert statements to make sure the items count is between 0 and MAX_ITEMS
+all the time, changing the iteration number and making sure all the above still is 
+satisfied
+- used the values of the wait counters and items histogram to see how many times the program
+had to wait (producer or consumer) for the items count to be their desired states
+before adding or subtracting from items (this is different every time as it depends on
+who, producers or consumers get the lock first) (and if
+producers or consumers wait more) and items histogram to see how times the different
+items number appeared

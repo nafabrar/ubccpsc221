@@ -1,0 +1,21 @@
+3)
+- timed values (thread to hide asynchrony)
+	- 10 reads: 0.019s, 0.017s, 0.017s MIN: 0.017s
+	- 100 reads: 0.065s, 0.067s 0.065s MIN: 0.065s
+	- 1000 reads: 0.543s, 0.549s, 0.543s MIN: 0.543s
+	- 10000 reads: 0.839s, 0.796s, 0.789s MIN: 0.789s
+- timed values (asynchronous read)
+	- 10 reads: 0.013s, 0.013s, 0.013s MIN: 0.013s
+	- 100 reads: 0.014s, 0.013s, 0.014s MIN: 0.013s
+	- 1000 reads: 0.016s, 0.016s, 0.016s MIN: 0.016s
+	- 10000 reads: 0.190s, 0.235s, 0.668s MIN: 0.190s
+- timed values (synchronous read - comparison)
+	- 10 reads: 0.112s
+	- 100 reads: 1.094s
+	- 1000 reads: 10.871s
+	- 10000 reads: 46.926s
+- from the data, threads one is is quite a bit slower than asynchronous read, especially at
+higher read requests but still MUCH faster than synchronous read
+- this probably due to the cost of creating threads, blocking them, unblocking them
+- this additional code, allows many tasks/reads to run in parallel (at once) however, slows down the
+overall performance/runtime from all the setup required before

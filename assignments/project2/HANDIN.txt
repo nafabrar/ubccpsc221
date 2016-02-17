@@ -1,0 +1,93 @@
+Student Name #1: TODO:
+Student ugrad login #1: TODO:
+
+Student Name #2: TODO:
+Student ugrad login #2: TODO:
+
+Team name (for fun!): TODO:
+
+Acknowledgment that you understand and have followed the course's
+collaboration policy
+(http://www.ugrad.cs.ubc.ca/~cs221/current/syllabus.shtml#conduct):
+
+TODO: [[Put your names here again as a signature]]
+
+TODO: submit using: make handin-proj2
+
+----------------------------------------------------------------------
+
+Approximate hours on project: TODO:
+
+----------------------------------------------------------------------
+
+For teams, rough breakdown of work: TODO:
+
+----------------------------------------------------------------------
+
+Acknowledgment of assistance: TODO:
+
+----------------------------------------------------------------------
+
+Questions:
+
+For the explanations, generally a sentence or two should be enough.
+Type your answers directly in this file.
+
+
+1.  Edit solve.cpp to use VectorPriorityQueue and LinkedListDict.
+How long did it take to solve the 4x4 slider puzzle?  The 5x5?
+The 6x6 (or how long did you wait before giving up)?  Also, record
+what kind of computer you ran your experiments on.
+
+TODO:
+
+2.  While still using VectorPriorityQueue, edit solve.cpp to use
+your AVLDict implementation.
+How long did it take to solve the 4x4, 5x5, and 6x6 slider puzzles?
+Also, record what kind of computer you ran your experiments on.
+This should be noticeably faster!
+
+TODO:
+
+3.  For each of the 4x4, 5x5, and 6x6 slider puzzles,
+what was the average depth of the calls to find() recorded
+in the statistics reported by the program?  Is this growing
+as the puzzle size grows?
+
+TODO:
+
+4.  While still using VectorPriorityQueue, edit solve.cpp to use
+your LinearHashDict implementation.
+How long did it take to solve the 4x4, 5x5, and 6x6 slider puzzles?
+Also, record what kind of computer you ran your experiments on.
+How do these times compare with your AVLDict implementation?
+
+TODO:
+
+5.  For each of the 4x4, 5x5, and 6x6 slider puzzles,
+what was the average number of extra probes per call to find()
+recorded in the statistics reported by the program?  Is this growing
+as the puzzle size grows?
+
+TODO:
+
+6.  While still using VectorPriorityQueue, edit solve.cpp to use
+your DoubleHashDict implementation.
+How long did it take to solve the 4x4, 5x5, and 6x6 slider puzzles?
+Also, record what kind of computer you ran your experiments on.
+How do these times compare with your LinearHashDict implementation?
+
+TODO:
+
+7.  For each of the 4x4, 5x5, and 6x6 slider puzzles,
+what was the average number of extra probes per call to find()
+recorded in the statistics reported by the program?
+How does this compare with your LinearHashDict implementation?
+Why isn't DoubleHashDict that much faster?
+
+TODO:
+
+----------------------------------------------------------------------
+
+We will be checking your implementations of AVLDict, LinearHashDict,
+and DoubleHashDict.
